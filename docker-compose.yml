@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:13
+    restart: always
+    container_name: exemple-db
+    ports:
+      - "2002:5432"
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=exemple
+    volumes:
+      - exemple-db:/var/lib/postgresql/data
+  adminer:
+    image: adminer:4.8.1
+    restart: always
+    ports:
+      - 2000:8080
+    depends_on:
+      - postgres
+
+volumes:
+  exemple-db:
