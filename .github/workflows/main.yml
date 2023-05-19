@@ -28,8 +28,9 @@ jobs:
       with:
         host: 192.168.1.27
         username: serveur
-        key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCReDQqZJ/mykxA6i3y6zlbGEHb6I4pxWpptaQAUHOK1DZ8M//RmlGRGAymRAgOlfRdV7JfCWYU+BgeHpN8uQJukACKhtlreDBUmGTxwN55bY+fkY2uVuXtQEnhb81eIIm7TzssBw7k4XaUmnGiGTcOCGrJg15bTHZe/RUZMm7WxPly5jN1tNHSWvJcZO50batg4D3TPeyLxFxRuky0rmyR2sq6jghgqNULFAFdk3L3A6Rmp5zE7dGg+IeK8UobcQ7iCN3IGZKZAQx9aDXkpTvFtpP5n51Rw8Eno9F54JPVIRB5lbioiFwl1+ag+abkq54Zz5FQj03RqcqYpch/BmDFAG4L2OG3AmvLh2ZxAlLSpWBJPCebWEcqfLcSNZwL6ba73M3ZAZ4KfiZ3jZFdksoMe0Yp5n7y2nPm8zuKSWVjzibsQd2zxWjXCXVuWqs48TWc+CqeFECfOdm6pyK2IFWjMV+RhYpGMiXxhcd1DQuhksYkpXT8HumIMEU8hhVo1Ic= adrien.quennehen270100@gmail.com
-
+        password: admin123
+        port: 22
+        
 
     - name: Clone repository on server
       run: |
