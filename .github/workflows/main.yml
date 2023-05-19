@@ -55,6 +55,10 @@ jobs:
         while ! curl -s http://localhost:5000; do
           sleep 5
         done
+        
+    - name: Tear down application on server
+      run: |
+        docker-compose down
 
 
  
